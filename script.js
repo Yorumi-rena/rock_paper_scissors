@@ -37,15 +37,28 @@ function playRound(playerSelection, computerSelection){
         }
     }
 }
-const playerSelection = "Rock";
-const computerSelection = computerPlay();
-console.log(playRound(playerSelection, computerSelection));
-
 function game(){
-    if(playRound() === "Computer wins!"){
-        return "0-1"
-    }else if(playRound() === "Player wins!"){
-        return "1-0"
+    for (let i = 0; i <= 5; i++){
+        playerSelection = prompt("Rock, paper, scissor");
+        computerSelection = computerPlay();
+        if (i < 5){
+            return "Go again!"
+        }else if (i = 5){
+            return "Game over!"
+        }
     }
 }
-console.log(game());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
